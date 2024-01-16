@@ -9,3 +9,7 @@ Feature: Test ORANGEHRM Application
     Given user is on HomePage and validate the Home Page Title
     And validate the Home Page URL
     And validate the Home Page Logo
+
+  Scenario: Test PIM Page Functionality
+    Given user is on PIM Page and validate PIM Page URL
+    And user click on Add Employee button and enter firstname , lastname and click on save button
