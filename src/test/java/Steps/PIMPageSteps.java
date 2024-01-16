@@ -41,4 +41,13 @@ public class PIMPageSteps extends BaseClass {
 		pIMPage.clickEmployeeList();
 	}
 
+	@When("user enter EmployeeID")
+	public void user_enter_employee_id() throws InterruptedException {
+		pIMPage.enterCapturedEmpID(empid);
+	}
+	@When("user click on search button")
+	public void user_click_on_search_button() throws InterruptedException {
+		pIMPage.click();
+	}
+
 }

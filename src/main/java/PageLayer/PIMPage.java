@@ -30,6 +30,12 @@ public class PIMPage extends BaseClass {
 	@FindBy(xpath = "//a[text()='Employee List']")
 	private WebElement clickEmployeeListbutton;
 
+	@FindBy(xpath = "//label[text()='Employee Id']/following::input[1]")
+	private WebElement empid;
+
+	@FindBy(xpath = "//button[text()=' Search ']")
+	private WebElement searchButton;
+
 	public PIMPage() {
 
 		PageFactory.initElements(driver, this);
@@ -73,4 +79,14 @@ public class PIMPage extends BaseClass {
 
 	}
 
+	public void enterCapturedEmpID(String EmpID) throws InterruptedException {
+		Thread.sleep(2000);
+		Wait.sendKeys(empid, EmpID);
+	}
+
+	public void click() throws InterruptedException {
+		Thread.sleep(2000);
+		Wait.click(searchButton);
+
+	}
 }
