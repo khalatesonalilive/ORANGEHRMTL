@@ -13,3 +13,7 @@ Feature: Test ORANGEHRM Application
   Scenario: Test PIM Page Functionality
     Given user is on PIM Page and validate PIM Page URL
     And user click on Add Employee button and enter firstname , lastname and click on save button
+
+  Scenario: Test Employee List Functionality
+    When user capture Employee Id
+    And user click on Employee List button
