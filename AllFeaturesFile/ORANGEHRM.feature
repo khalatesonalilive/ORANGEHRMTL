@@ -17,3 +17,7 @@ Feature: Test ORANGEHRM Application
   Scenario: Test Employee List Functionality
     When user capture Employee Id
     And user click on Employee List button
+
+  Scenario: Test Search Employee Functionality
+    When user enter EmployeeID
+    And user click on search button
